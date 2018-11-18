@@ -16,7 +16,7 @@ public class SignUp {
 	
 	@RequestMapping(method = RequestMethod.POST, value = "user/signup")
 	void signup(User user) {
-		userservice.create(user);
+		userservice.createUser(user);
 	}
 	
 }

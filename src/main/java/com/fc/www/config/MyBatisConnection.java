@@ -6,10 +6,17 @@ import java.io.Reader;
 
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.stereotype.Component;
 
-
+@Component
+@ComponentScan("com.fc.www")
 public class MyBatisConnection {
+	
 		private static SqlSessionFactory sqlsessionfactory;
+		
 		static {
 			Reader reader = null;
 			try {
@@ -19,10 +26,11 @@ public class MyBatisConnection {
 				   throw new RuntimeException(e.getMessage());
 
 			}
-		
+				if(sqlsessionfactory == null) {
 			  sqlsessionfactory = new SqlSessionFactoryBuilder().build(reader);
-
+				}
 		}
+	@Bean
 		public static SqlSessionFactory getSqlSessionFactory() {
 		  return sqlsessionfactory;
 			    }

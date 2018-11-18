@@ -1,15 +1,21 @@
-package com.fc.www.service.impl;
+package com.fc.www.dao.impl;
 
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+
+import com.fc.www.dao.UserDao;
 import com.fc.www.dto.User;
 import com.fc.www.service.UserService;
 
-public class UserServiceImpl implements UserService{
+@Repository
+public class UserDaoImpl implements UserDao{
+	
 	
 	private SqlSessionFactory sqlSessionFactory = null;
 
-	public UserServiceImpl(SqlSessionFactory sqlSessionFactory ){
+	public UserDaoImpl(SqlSessionFactory sqlSessionFactory ){
 		this.sqlSessionFactory = sqlSessionFactory;
 	}
 	
