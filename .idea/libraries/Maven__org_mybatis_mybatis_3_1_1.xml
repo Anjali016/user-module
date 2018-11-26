@@ -2,12 +2,16 @@
   <library name="Maven: org.mybatis:mybatis:3.1.1">
     <CLASSES>
       <root url="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.1.1/mybatis-3.1.1.jar!/" />
+      <root url="file://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.6" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.1.1/mybatis-3.1.1-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
       <root url="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.1.1/mybatis-3.1.1-sources.jar!/" />
+      <root url="file://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.6" />
     </SOURCES>
+    <jarDirectory url="file://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.6" recursive="false" />
+    <jarDirectory url="file://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.6" recursive="false" type="SOURCES" />
   </library>
 </component>

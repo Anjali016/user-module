@@ -1,9 +1,7 @@
-com/fc/www/controller/Login.class
-com/fc/www/controller/SignUp.class
-com/fc/www/config/MyBatisConnection.class
 com/fc/www/UserApp.class
 com/fc/www/service/UserService.class
 com/fc/www/dto/User.class
-com/fc/www/controller/SignOut.class
-com/fc/www/service/impl/UserServiceImpl.class
-com/fc/www/repo/UserRepository.class
+com/fc/www/mapper/UserMapper.class
+com/fc/www/controller/LoginController.class
+com/fc/www/controller/SignUpController.class
+com/fc/www/controller/SignOutController.class
